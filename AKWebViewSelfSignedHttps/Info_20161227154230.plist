@@ -2,11 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
+    
+    <key>NSAppTransportSecurity</key>
+    　　<dict>
+        　　<key>NSExceptionDomains</key>
+        　　<dict>
+            　　　　<!--你的https域名-->
+            
+            　　　　<key>xxxxxx.com</key>
+            　　　　<dict>
+                　　　　　　<!--允许子域-->
+                　　　　　　<key>NSIncludesSubdomains</key>
+                　　　　　　<true/>
+                　　　　　　<!--TLS允许的最低版本号-->
+                　　　　　　<key>NSExceptionMinimumTLSVersion</key>
+                　　　　　　<string>TLSv1.0</string>
+                　　　　</dict>
+            　　</dict>
+    </dict>
+    
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "AKWebView.h"
+#import "WebKit/WebKit.h"
 
 @interface ViewController ()
 
@@ -18,10 +19,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSURL *url = [NSURL URLWithString:@"你要加载的拥有自签名证书的URL"];
+    //http://www.gx.10086.cn/shop/indexmini?menuId=002100010001&menuName=shangpin&menuChannel=null
+    //https://gx.ac.10086.cn/POST
+   // http://www.gx.10086.cn/shop/indexmini?menuId=002100010001&menuName=shangpin&menuChannel=null
+    
+    NSURL *url = [NSURL URLWithString:@"http://www.gx.10086.cn/shop/indexmini?menuId=002100010001&menuName=shangpin&menuChannel=null"];
+    
     AKWebView *webView = [AKWebView shareWebView];
-    [webView webViewWithLoadRequestWithURL:url Fram:CGRectMake(0, 0, 500, 500)];
+    [webView webViewWithLoadRequestWithURL:url Fram:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
     [self.view addSubview:webView];
+    
+
 }
 
 
