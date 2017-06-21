@@ -11,6 +11,7 @@
 @interface AKWebView : UIWebView
 
 +(instancetype)shareWebView;
+
 - (void)webViewWithLoadRequestWithURL:(NSURL *)url Fram:(CGRect)fram;
 
 @end
