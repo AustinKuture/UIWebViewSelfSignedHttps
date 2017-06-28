@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50C8E9165ECB9DC18EC91822 /* libPods-AKWebViewSelfSignedHttps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C530998DDF9FCB4F7E3C0886 /* libPods-AKWebViewSelfSignedHttps.a */; };
+		D7297F361E120F0F00F0DEA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7297F351E120F0F00F0DEA8 /* main.m */; };
+		D7297F391E120F0F00F0DEA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7297F381E120F0F00F0DEA8 /* AppDelegate.m */; };
+		D7297F3C1E120F0F00F0DEA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7297F3B1E120F0F00F0DEA8 /* ViewController.m */; };
+		D7297F3F1E120F0F00F0DEA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7297F3D1E120F0F00F0DEA8 /* Main.storyboard */; };
+		D7297F411E120F0F00F0DEA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7297F401E120F0F00F0DEA8 /* Assets.xcassets */; };
+		D7297F441E120F0F00F0DEA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7297F421E120F0F00F0DEA8 /* LaunchScreen.storyboard */; };
+		D7297F4D1E120F3E00F0DEA8 /* AKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7297F4C1E120F3E00F0DEA8 /* AKWebView.m */; };
+		D779CC421E5D5DFB001F325E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D779CC411E5D5DFB001F325E /* WebKit.framework */; };
+		D78D72191EFA42550063F41E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78D72181EFA42550063F41E /* Security.framework */; };
+		D78D721C1EFA57D60063F41E /* AKNetPackegeAFN.m in Sources */ = {isa = PBXBuildFile; fileRef = D78D721B1EFA57D60063F41E /* AKNetPackegeAFN.m */; };
+		D78D721E1EFA5CFE0063F41E /* test.p12 in Resources */ = {isa = PBXBuildFile; fileRef = D78D721D1EFA5CFE0063F41E /* test.p12 */; };
+		D78D72211EFA5F2E0063F41E /* AKWebSSLTwo-Way.m in Sources */ = {isa = PBXBuildFile; fileRef = D78D72201EFA5F2E0063F41E /* AKWebSSLTwo-Way.m */; };
+		D78D72231EFA62BA0063F41E /* server.cer in Resources */ = {isa = PBXBuildFile; fileRef = D78D72221EFA62BA0063F41E /* server.cer */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18827E213178DC73D09ABBD4 /* Pods-AKWebViewSelfSignedHttps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKWebViewSelfSignedHttps.release.xcconfig"; path = "Pods/Target Support Files/Pods-AKWebViewSelfSignedHttps/Pods-AKWebViewSelfSignedHttps.release.xcconfig"; sourceTree = "<group>"; };
+		896D2AE4CF5C999B6111F0D5 /* Pods-AKWebViewSelfSignedHttps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKWebViewSelfSignedHttps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AKWebViewSelfSignedHttps/Pods-AKWebViewSelfSignedHttps.debug.xcconfig"; sourceTree = "<group>"; };
+		C530998DDF9FCB4F7E3C0886 /* libPods-AKWebViewSelfSignedHttps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AKWebViewSelfSignedHttps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7297F311E120F0F00F0DEA8 /* AKWebViewSelfSignedHttps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKWebViewSelfSignedHttps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7297F351E120F0F00F0DEA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D7297F371E120F0F00F0DEA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D7297F381E120F0F00F0DEA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D7297F3A1E120F0F00F0DEA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D7297F3B1E120F0F00F0DEA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D7297F3E1E120F0F00F0DEA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7297F401E120F0F00F0DEA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7297F431E120F0F00F0DEA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7297F451E120F0F00F0DEA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7297F4B1E120F3E00F0DEA8 /* AKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKWebView.h; sourceTree = "<group>"; };
+		D7297F4C1E120F3E00F0DEA8 /* AKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKWebView.m; sourceTree = "<group>"; };
+		D779CC411E5D5DFB001F325E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		D78D72181EFA42550063F41E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D78D721A1EFA57D60063F41E /* AKNetPackegeAFN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKNetPackegeAFN.h; sourceTree = "<group>"; };
+		D78D721B1EFA57D60063F41E /* AKNetPackegeAFN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKNetPackegeAFN.m; sourceTree = "<group>"; };
+		D78D721D1EFA5CFE0063F41E /* test.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.p12; sourceTree = "<group>"; };
+		D78D721F1EFA5F2E0063F41E /* AKWebSSLTwo-Way.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AKWebSSLTwo-Way.h"; sourceTree = "<group>"; };
+		D78D72201EFA5F2E0063F41E /* AKWebSSLTwo-Way.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AKWebSSLTwo-Way.m"; sourceTree = "<group>"; };
+		D78D72221EFA62BA0063F41E /* server.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = server.cer; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7297F2E1E120F0F00F0DEA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D78D72191EFA42550063F41E /* Security.framework in Frameworks */,
+				D779CC421E5D5DFB001F325E /* WebKit.framework in Frameworks */,
+				50C8E9165ECB9DC18EC91822 /* libPods-AKWebViewSelfSignedHttps.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6198533288630910733F5080 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				896D2AE4CF5C999B6111F0D5 /* Pods-AKWebViewSelfSignedHttps.debug.xcconfig */,
+				18827E213178DC73D09ABBD4 /* Pods-AKWebViewSelfSignedHttps.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D7297F281E120F0F00F0DEA8 = {
+			isa = PBXGroup;
+			children = (
+				D7297F331E120F0F00F0DEA8 /* AKWebViewSelfSignedHttps */,
+				D7297F321E120F0F00F0DEA8 /* Products */,
+				D779CC401E5D5DFB001F325E /* Frameworks */,
+				6198533288630910733F5080 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D7297F321E120F0F00F0DEA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7297F311E120F0F00F0DEA8 /* AKWebViewSelfSignedHttps.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7297F331E120F0F00F0DEA8 /* AKWebViewSelfSignedHttps */ = {
+			isa = PBXGroup;
+			children = (
+				D78D72221EFA62BA0063F41E /* server.cer */,
+				D78D721D1EFA5CFE0063F41E /* test.p12 */,
+				D7297F371E120F0F00F0DEA8 /* AppDelegate.h */,
+				D7297F381E120F0F00F0DEA8 /* AppDelegate.m */,
+				D7297F3A1E120F0F00F0DEA8 /* ViewController.h */,
+				D7297F3B1E120F0F00F0DEA8 /* ViewController.m */,
+				D7297F4B1E120F3E00F0DEA8 /* AKWebView.h */,
+				D7297F4C1E120F3E00F0DEA8 /* AKWebView.m */,
+				D78D721F1EFA5F2E0063F41E /* AKWebSSLTwo-Way.h */,
+				D78D72201EFA5F2E0063F41E /* AKWebSSLTwo-Way.m */,
+				D7297F3D1E120F0F00F0DEA8 /* Main.storyboard */,
+				D7297F401E120F0F00F0DEA8 /* Assets.xcassets */,
+				D7297F421E120F0F00F0DEA8 /* LaunchScreen.storyboard */,
+				D7297F451E120F0F00F0DEA8 /* Info.plist */,
+				D7297F341E120F0F00F0DEA8 /* Supporting Files */,
+			);
+			path = AKWebViewSelfSignedHttps;
+			sourceTree = "<group>";
+		};
+		D7297F341E120F0F00F0DEA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D78D721A1EFA57D60063F41E /* AKNetPackegeAFN.h */,
+				D78D721B1EFA57D60063F41E /* AKNetPackegeAFN.m */,
+				D7297F351E120F0F00F0DEA8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D779CC401E5D5DFB001F325E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D78D72181EFA42550063F41E /* Security.framework */,
+				D779CC411E5D5DFB001F325E /* WebKit.framework */,
+				C530998DDF9FCB4F7E3C0886 /* libPods-AKWebViewSelfSignedHttps.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7297F301E120F0F00F0DEA8 /* AKWebViewSelfSignedHttps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7297F481E120F0F00F0DEA8 /* Build configuration list for PBXNativeTarget "AKWebViewSelfSignedHttps" */;
+			buildPhases = (
+				A7AB7B9D6EA51CDC17AD7C17 /* [CP] Check Pods Manifest.lock */,
+				D7297F2D1E120F0F00F0DEA8 /* Sources */,
+				D7297F2E1E120F0F00F0DEA8 /* Frameworks */,
+				D7297F2F1E120F0F00F0DEA8 /* Resources */,
+				1091043EEDAC0506053454F4 /* [CP] Embed Pods Frameworks */,
+				699C0697BC06A90BF312C881 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AKWebViewSelfSignedHttps;
+			productName = AKWebViewSelfSignedHttps;
+			productReference = D7297F311E120F0F00F0DEA8 /* AKWebViewSelfSignedHttps.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7297F291E120F0F00F0DEA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Kuture;
+				TargetAttributes = {
+					D7297F301E120F0F00F0DEA8 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D7297F2C1E120F0F00F0DEA8 /* Build configuration list for PBXProject "AKWebViewSelfSignedHttps" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7297F281E120F0F00F0DEA8;
+			productRefGroup = D7297F321E120F0F00F0DEA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7297F301E120F0F00F0DEA8 /* AKWebViewSelfSignedHttps */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7297F2F1E120F0F00F0DEA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D78D721E1EFA5CFE0063F41E /* test.p12 in Resources */,
+				D7297F441E120F0F00F0DEA8 /* LaunchScreen.storyboard in Resources */,
+				D7297F411E120F0F00F0DEA8 /* Assets.xcassets in Resources */,
+				D7297F3F1E120F0F00F0DEA8 /* Main.storyboard in Resources */,
+				D78D72231EFA62BA0063F41E /* server.cer in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1091043EEDAC0506053454F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AKWebViewSelfSignedHttps/Pods-AKWebViewSelfSignedHttps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		699C0697BC06A90BF312C881 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AKWebViewSelfSignedHttps/Pods-AKWebViewSelfSignedHttps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7AB7B9D6EA51CDC17AD7C17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7297F2D1E120F0F00F0DEA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7297F3C1E120F0F00F0DEA8 /* ViewController.m in Sources */,
+				D78D721C1EFA57D60063F41E /* AKNetPackegeAFN.m in Sources */,
+				D7297F391E120F0F00F0DEA8 /* AppDelegate.m in Sources */,
+				D7297F361E120F0F00F0DEA8 /* main.m in Sources */,
+				D78D72211EFA5F2E0063F41E /* AKWebSSLTwo-Way.m in Sources */,
+				D7297F4D1E120F3E00F0DEA8 /* AKWebView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D7297F3D1E120F0F00F0DEA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7297F3E1E120F0F00F0DEA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7297F421E120F0F00F0DEA8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7297F431E120F0F00F0DEA8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7297F461E120F0F00F0DEA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D7297F471E120F0F00F0DEA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7297F491E120F0F00F0DEA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 896D2AE4CF5C999B6111F0D5 /* Pods-AKWebViewSelfSignedHttps.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AKWebViewSelfSignedHttps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = austin.AKWebViewSelfSignedHttps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7297F4A1E120F0F00F0DEA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18827E213178DC73D09ABBD4 /* Pods-AKWebViewSelfSignedHttps.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AKWebViewSelfSignedHttps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = austin.AKWebViewSelfSignedHttps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7297F2C1E120F0F00F0DEA8 /* Build configuration list for PBXProject "AKWebViewSelfSignedHttps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7297F461E120F0F00F0DEA8 /* Debug */,
+				D7297F471E120F0F00F0DEA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7297F481E120F0F00F0DEA8 /* Build configuration list for PBXNativeTarget "AKWebViewSelfSignedHttps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7297F491E120F0F00F0DEA8 /* Debug */,
+				D7297F4A1E120F0F00F0DEA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7297F291E120F0F00F0DEA8 /* Project object */;
+}
