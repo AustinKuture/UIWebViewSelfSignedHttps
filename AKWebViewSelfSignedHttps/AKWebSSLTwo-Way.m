@@ -15,6 +15,7 @@
 @property (nonatomic) SSLAuthenticate authenticated;
 @property (nonatomic,copy) NSString *serverStr;
 @property (nonatomic,copy) NSString *clientStr;
+@property (nonatomic) BOOL validDomain;
 
 
 @end
@@ -31,13 +32,20 @@
 }
 
 #pragma mark ***UIWebView 加载方法***
-- (void)webViewTwoWayWithLoadRequestWithURL:(NSURL *)url Server_Cer:(NSString *)server Client_P12:(NSString *)client ClientPassword:(NSString *)clientPassword Fram:(CGRect)fram{
+- (void)webViewTwoWayWithLoadRequestWithURL:(NSURL *)url
+                                 Server_Cer:(NSString *)server
+                                 Client_P12:(NSString *)client
+                             ClientPassword:(NSString *)clientPassword
+                                ValidDomain:(BOOL)validDomain
+                                       Fram:(CGRect)fram{
     
     _serverStr = server;
     _clientStr = client;
     _clientPasswordStr = clientPassword;
+    _validDomain = validDomain;
     
     self.frame = fram;
+    
     self.delegate = self;
     _requestW = [NSURLRequest requestWithURL:url];
     
@@ -108,12 +116,11 @@
         NSString *host = challenge.protectionSpace.host;
         
         SecTrustRef serverTrust = challenge.protectionSpace.serverTrust;
-        
-        BOOL validDomain = false;
+    
         
         NSMutableArray *polices = [NSMutableArray array];
         
-        if (validDomain) {
+        if (_validDomain) {
             
             [polices addObject:(__bridge_transfer id)SecPolicyCreateSSL(true, (__bridge CFStringRef)host)];
             
@@ -221,11 +228,26 @@
     
     //webview 重新加载请求。
     
+        NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+    
+        [[session dataTaskWithRequest:_requestW completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    
+            NSLog(@"%s",__FUNCTION__);
+            NSLog(@"RESPONSE:%@",response);
+            NSLog(@"ERROR:%@",error);
+    
+            NSString *dataString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            NSLog(@"dataString:%@",dataString);
+    
+            [self loadHTMLString:dataString baseURL:nil];
+        }] resume];
+    
     [self loadRequest:_requestW];
     
     [connection cancel];
     
 }
+
 
 
 @end

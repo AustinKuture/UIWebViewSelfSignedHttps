@@ -14,6 +14,11 @@
 
 + (instancetype)shareWebViewTwoWay;
 
-- (void)webViewTwoWayWithLoadRequestWithURL:(NSURL *)url Server_Cer:(NSString *)server Client_P12:(NSString *)client ClientPassword:(NSString *)clientPassword Fram:(CGRect)fram;
+- (void)webViewTwoWayWithLoadRequestWithURL:(NSURL *)url
+                                 Server_Cer:(NSString *)server
+                                 Client_P12:(NSString *)client
+                             ClientPassword:(NSString *)clientPassword
+                                ValidDomain:(BOOL)validDomain
+                                       Fram:(CGRect)fram;
 
 @end

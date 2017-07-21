@@ -11,7 +11,6 @@
 		D7297F361E120F0F00F0DEA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7297F351E120F0F00F0DEA8 /* main.m */; };
 		D7297F391E120F0F00F0DEA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7297F381E120F0F00F0DEA8 /* AppDelegate.m */; };
 		D7297F3C1E120F0F00F0DEA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7297F3B1E120F0F00F0DEA8 /* ViewController.m */; };
-		D7297F3F1E120F0F00F0DEA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7297F3D1E120F0F00F0DEA8 /* Main.storyboard */; };
 		D7297F411E120F0F00F0DEA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7297F401E120F0F00F0DEA8 /* Assets.xcassets */; };
 		D7297F441E120F0F00F0DEA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7297F421E120F0F00F0DEA8 /* LaunchScreen.storyboard */; };
 		D7297F4D1E120F3E00F0DEA8 /* AKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7297F4C1E120F3E00F0DEA8 /* AKWebView.m */; };
@@ -33,7 +32,6 @@
 		D7297F381E120F0F00F0DEA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D7297F3A1E120F0F00F0DEA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D7297F3B1E120F0F00F0DEA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D7297F3E1E120F0F00F0DEA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7297F401E120F0F00F0DEA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7297F431E120F0F00F0DEA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7297F451E120F0F00F0DEA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,20 +91,15 @@
 		D7297F331E120F0F00F0DEA8 /* AKWebViewSelfSignedHttps */ = {
 			isa = PBXGroup;
 			children = (
+				D77DA0DC1F219D8A0098FFE1 /* 网络 */,
 				D78D72221EFA62BA0063F41E /* server.cer */,
 				D78D721D1EFA5CFE0063F41E /* test.p12 */,
-				D7297F371E120F0F00F0DEA8 /* AppDelegate.h */,
-				D7297F381E120F0F00F0DEA8 /* AppDelegate.m */,
 				D7297F3A1E120F0F00F0DEA8 /* ViewController.h */,
 				D7297F3B1E120F0F00F0DEA8 /* ViewController.m */,
 				D7297F4B1E120F3E00F0DEA8 /* AKWebView.h */,
 				D7297F4C1E120F3E00F0DEA8 /* AKWebView.m */,
 				D78D721F1EFA5F2E0063F41E /* AKWebSSLTwo-Way.h */,
 				D78D72201EFA5F2E0063F41E /* AKWebSSLTwo-Way.m */,
-				D7297F3D1E120F0F00F0DEA8 /* Main.storyboard */,
-				D7297F401E120F0F00F0DEA8 /* Assets.xcassets */,
-				D7297F421E120F0F00F0DEA8 /* LaunchScreen.storyboard */,
-				D7297F451E120F0F00F0DEA8 /* Info.plist */,
 				D7297F341E120F0F00F0DEA8 /* Supporting Files */,
 			);
 			path = AKWebViewSelfSignedHttps;
@@ -115,8 +108,11 @@
 		D7297F341E120F0F00F0DEA8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D78D721A1EFA57D60063F41E /* AKNetPackegeAFN.h */,
-				D78D721B1EFA57D60063F41E /* AKNetPackegeAFN.m */,
+				D7297F371E120F0F00F0DEA8 /* AppDelegate.h */,
+				D7297F381E120F0F00F0DEA8 /* AppDelegate.m */,
+				D7297F401E120F0F00F0DEA8 /* Assets.xcassets */,
+				D7297F421E120F0F00F0DEA8 /* LaunchScreen.storyboard */,
+				D7297F451E120F0F00F0DEA8 /* Info.plist */,
 				D7297F351E120F0F00F0DEA8 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -130,6 +126,15 @@
 				C530998DDF9FCB4F7E3C0886 /* libPods-AKWebViewSelfSignedHttps.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D77DA0DC1F219D8A0098FFE1 /* 网络 */ = {
+			isa = PBXGroup;
+			children = (
+				D78D721A1EFA57D60063F41E /* AKNetPackegeAFN.h */,
+				D78D721B1EFA57D60063F41E /* AKNetPackegeAFN.m */,
+			);
+			name = "网络";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +201,6 @@
 				D78D721E1EFA5CFE0063F41E /* test.p12 in Resources */,
 				D7297F441E120F0F00F0DEA8 /* LaunchScreen.storyboard in Resources */,
 				D7297F411E120F0F00F0DEA8 /* Assets.xcassets in Resources */,
-				D7297F3F1E120F0F00F0DEA8 /* Main.storyboard in Resources */,
 				D78D72231EFA62BA0063F41E /* server.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,14 +272,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D7297F3D1E120F0F00F0DEA8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D7297F3E1E120F0F00F0DEA8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D7297F421E120F0F00F0DEA8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -380,6 +376,7 @@
 			baseConfigurationReference = 896D2AE4CF5C999B6111F0D5 /* Pods-AKWebViewSelfSignedHttps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AKWebViewSelfSignedHttps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -393,6 +390,7 @@
 			baseConfigurationReference = 18827E213178DC73D09ABBD4 /* Pods-AKWebViewSelfSignedHttps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AKWebViewSelfSignedHttps/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
